@@ -855,7 +855,7 @@ footer .nav-divider{float:left !important;margin:0 20px}
 .project-grid .thumb{opacity:1;filter:alpha(opacity=100);transition:opacity .25s ease-in-out;-moz-transition:opacity .25s ease-in-out;-webkit-transition:opacity .25s ease-in-out}
 .project-grid:hover .project-details{display:block}
 .project-grid:hover .thumb{opacity:.3;filter:alpha(opacity=30)}
-.project-list{overflow:hidden}.project-list ul{white-space:nowrap;font-size:0;display:block;margin:0;padding:0}.project-list ul li{display:inline-block;width:auto;height:100%}.project-list ul li img{width:auto;height:100%}
+.project-list{overflow:hidden}.project-list ul{white-space:nowrap;font-size:0;display:block;margin:0;padding:0}.project-list ul li{display:inline-block;width:500px;height:100%}.project-list ul li img{width:auto;height:100%}
 .project-info{position:fixed;top:0px;bottom:140px;left:0px;right:0px;background:rgba(255,255,255,0.7);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#b2ffffff, endColorstr=#b2ffffff);zoom:1}.project-info .close-info{cursor:pointer;margin:30px;display:block;width:54px;height:54px;overflow:hidden;background:url('../img/close.png') no-repeat 0 0}.project-info .close-info:hover{background-position:-54px 0}
 .img-responsive-height{height:100%;width:auto}
 .cursor-pointer{cursor:pointer}

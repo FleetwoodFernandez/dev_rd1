@@ -1,6 +1,6 @@
 ﻿<div class="project-list">
-	<ul data-bind="template: { foreach: project().assets, afterAdd: changeSlide }">
-		<li data-bind="slide: path"><img data-bind="attr: { src: path }" /></li>
+	<ul data-bind="template: { foreach: project().assets }">
+		<li><img data-bind="attr: { src: path }" /></li>
 	</ul>
 </div>
 

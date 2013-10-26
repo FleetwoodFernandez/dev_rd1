@@ -15,12 +15,15 @@
         self.closeInfo = function() {
             self.displayInfo(false);
         };
-        app.on('details:info').then(function(e){
+        app.on('details:info').then(function(e) {
             self.displayInfo(e);
             console.log(e)
         });
-        app.on('details:slide').then(function(id){
+        app.on('details:slide').then(function(id) {
             self.slideid(id);
+            var left = parseInt(self.slideid() * -500);
+            console.log(left)
+            $(".project-list ul").stop().animate({ 'margin-left': left }, 600);
         });
     };
     return ctor;
