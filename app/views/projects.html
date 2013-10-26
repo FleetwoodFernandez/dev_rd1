@@ -1,0 +1,10 @@
+﻿<div data-bind="foreach: filtered">
+	<div class="col-md-4 project-grid">
+		<a data-bind="attr: { href: $parent.projectURL(alias) }">
+			<div class="project-details">
+				<!-- ko text: name --><!-- /ko -->
+			</div>
+			<img data-bind="attr: { src: thumbnail }" alt="" class="thumb img-responsive" />
+		</a>
+	</div>
+</div>

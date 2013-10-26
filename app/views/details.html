@@ -1,0 +1,17 @@
+﻿<div class="project-list">
+	<ul data-bind="template: { foreach: project().assets, afterAdd: changeSlide }">
+		<li data-bind="slide: path"><img data-bind="attr: { src: path }" /></li>
+	</ul>
+</div>
+
+<div class="project-info" data-bind="visible: displayInfo">
+	<div class="col-md-6">
+		<section class="box-padding">
+		    <h2><!-- ko text: project().name --><!-- /ko --></h2>
+		    <p><!-- ko text: project().description --><!-- /ko --></p>
+		</section>
+	</div>
+	<div class="col-md-6">
+		<span class="pull-right close-info" data-bind="click: closeInfo"></span>
+	</div>
+</div>
