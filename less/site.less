@@ -1,5 +1,5 @@
-@footerHeight: 140px;
-@footerPadding: 30px;
+@footerHeight: 100px;
+@footerPadding: 20px;
 
 html,
 body {
@@ -36,19 +36,24 @@ footer {
 	bottom: 0px;
 	width: 100%;
   	height: @footerHeight;
-	padding: 30px 30px 0 30px;
+	padding: 20px;
 	.brand-logo {
 		padding: 0;
 	}
 	.nav-application {
 	 	.pull-left;
-	 	margin: 10px 25px;
+	 	margin: 0 25px;
 		li {
 			display: list-item;
 			margin-bottom: 0px;
+			line-height: 0;
 			a {
 				display: inline;
 				padding: 0;
+				font-size: 12px;
+				font-style: normal;
+				line-height: 17px;
+				font-family: 'Gotham Narrow A', 'Gotham Narrow B', helvetica, arial, sans-serif;
 				&:hover {
 					background: transparent;
 				}
@@ -59,6 +64,12 @@ footer {
 	.nav-divider {
 		.pull-left;
 		margin: 0 20px;
+	}
+
+	.project-title {
+		h3 {
+			margin-top: 0;
+		}
 	}
 }
 
@@ -117,7 +128,6 @@ footer {
 
 	&.projects {
 		background-image: none;
-		background-color: #000;
 	}
 
 	&.details {
@@ -135,6 +145,10 @@ footer {
 
 .box-padding {
 	margin: 30px;
+}
+
+.text-container {
+	max-width: 600px;
 }
 
 .project-grid {
@@ -155,9 +169,9 @@ footer {
 
 	.thumb {
 		.opacity(1);
-		transition: opacity .25s ease-in-out;
-	   -moz-transition: opacity .25s ease-in-out;
-	   -webkit-transition: opacity .25s ease-in-out;
+		//transition: opacity .25s;
+		//-moz-transition: opacity .25s;
+		//-webkit-transition: opacity .25s;
 	}
 
 	&:hover {

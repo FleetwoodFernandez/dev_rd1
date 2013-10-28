@@ -31,8 +31,10 @@
         </div>
         <div class="col-md-4">
             <!-- ko if: project() -->
-                <h3 data-bind="text: project().name"></h3>
-                <a class="cursor-pointer" data-bind="click: projectInfo">PROJECT INFO</a>
+                <div class="project-title">
+                    <h3 data-bind="text: project().name"></h3>
+                    <a class="cursor-pointer" data-bind="click: projectInfo">PROJECT INFO</a>
+                </div>
             <!-- /ko -->
         </div>
         <div class="col-md-2">
