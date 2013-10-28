@@ -21,9 +21,12 @@
         });
         app.on('details:slide').then(function(id) {
             self.slideid(id);
-            var left = parseInt(self.slideid() * -500);
-            console.log(left)
-            $(".project-list ul").stop().animate({ 'margin-left': left }, 600);
+            var slides = $(".project-list ul li").slice(0, id),
+                left = 0;
+                $.each(slides, function(i, e) {
+                    left += $(e).width();
+                });
+            $(".project-list ul").stop().animate({ 'margin-left': -left }, 600);
         });
     };
     return ctor;
