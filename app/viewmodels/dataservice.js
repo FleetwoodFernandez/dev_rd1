@@ -20,12 +20,14 @@ define(function(require){
 	];
 	service.projects = [
 		{
-			alias: "Peninsula",
-			name: "Peninsula Pacific",
-			location: "Los Angeles, CA",
-			description: "The design of this executive office suite blends the bright spirit of the Southern California coast, where the CEO of the company resides, and the robust character of a Sun Valley horse ranch, his second home. Combined, the space also represents the entertainment holding company’s philosophy of relaxed hospitality. White lacquered walls balance the dark reclaimed oak plank flooring. Deep indigo lacquer panels wrap into the boardroom, and clear glass partitions allow uninterrupted views of Century City’s skyline. Fleetwood/Fernandez custom designed most of the furnishings using a palette of noble materials: solid walnut, oiled bronze, and marble",
-			caption: "",
-			subcaption: "",
+			alias: "Penninsula",
+			name: "Penninsula Pacific",
+			location: "RANCHO PARK, LOS ANGELES",
+			description: "<p>The design of this executive office suite blends the bright spirit of the Southern California coast, where the CEO of the company resides, and the robust character of a Sun Valley horse ranch, his second home. Combined, the space also represents the entertainment holding company’s philosophy of relaxed hospitality. White lacquered walls balance the dark reclaimed oak plank flooring. Deep indigo lacquer panels wrap into the boardroom, and clear glass partitions allow uninterrupted views of Century City’s skyline.</p><p>Fleetwood/Fernandez custom designed most of the furnishings using a palette of noble materials: solid walnut, oiled bronze, and marble.<p>",
+			recipe: {
+				name: "Surf and Turf",
+				path: "assets/recipe/Surf_and_turf.docx"
+			},
 			thumbnail: "img/projects/peninsula/Peninsula_thumb.jpg",
 			categories: ["residential"],
 			assets: [

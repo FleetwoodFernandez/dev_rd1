@@ -1,6 +1,6 @@
-﻿define(function() {
+﻿define(['imageLoader', 'cbpBGSlideshow', 'modernizr'], function(imageLoader, cbp, modernizr) {
     var ctor = function () {
-        this.displayName = '';
+    	//cbpBGSlideshow.init();
     };
     return ctor;
 });

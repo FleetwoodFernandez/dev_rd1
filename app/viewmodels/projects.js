@@ -4,7 +4,7 @@
         self.displayName = 'Projects';
 		self.categories = dataservice.categories;
 		self.projectURL = function(alias) {
-			return '#details/' + alias + "/0";
+			return '#details/' + alias;// + "/0";
 		};
 		self.allProjects = dataservice.projects;
         self.filter = ko.observable("all");

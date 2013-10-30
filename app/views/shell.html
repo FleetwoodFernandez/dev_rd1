@@ -12,18 +12,21 @@
                     <a data-bind="attr: { href: hash }, html: title"></a>
                 </li>
             </ul>
-            <span class="nav-divider"><img src="img/slash.png" /></span>
             <!-- ko if: route() === 'projects' || route() === 'details' -->
+            <span class="nav-divider"><img src="img/slash.png" /></span>
             <ul class="nav nav-application" data-bind="foreach: subNavigation('categories')">
-                <li data-bind="css: { active: isActive }">
+                <li>
                     <a data-bind="attr: { href: hash + settings.id }, html: title"></a>
                 </li>
             </ul>
-            <span class="nav-divider"><img src="img/slash.png" /></span>
+                <!-- ko if: project() -->
+                    <span class="nav-divider"><img src="img/slash.png" /></span>
+                <!-- /ko -->    
             <!-- /ko -->
             <!-- ko if: route() === 'about' -->
+            <span class="nav-divider"><img src="img/slash.png" /></span>
             <ul class="nav nav-application" data-bind="foreach: subNavigation('about')">
-                <li data-bind="css: { active: isActive }">
+                <li>
                     <a data-bind="attr: { href: hash }, html: title"></a>
                 </li>
             </ul>
@@ -32,7 +35,7 @@
         <div class="col-md-4">
             <!-- ko if: project() -->
                 <div class="project-title">
-                    <h3 data-bind="text: project().name"></h3>
+                    <h2 data-bind="text: project().name"></h2>
                     <a class="cursor-pointer" data-bind="click: projectInfo">PROJECT INFO</a>
                 </div>
             <!-- /ko -->
