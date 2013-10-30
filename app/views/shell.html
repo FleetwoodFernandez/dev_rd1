@@ -31,16 +31,14 @@
                 </li>
             </ul>
             <!-- /ko -->
-        </div>
-        <div class="col-md-4">
             <!-- ko if: project() -->
-                <div class="project-title">
+                <div class="project-title nav-application">
                     <h2 data-bind="text: project().name"></h2>
                     <a class="cursor-pointer" data-bind="click: projectInfo">PROJECT INFO</a>
                 </div>
             <!-- /ko -->
         </div>
-        <div class="col-md-2">
+        <div class="col-md-6">
             <!-- ko if: project() && route() === 'details' -->
             <ul class="list-inline list-unstyled slide-navigation pull-right">
                 <li><span class="slide prev" data-bind="click: previous"></span></li>
