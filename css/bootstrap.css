@@ -862,7 +862,7 @@ footer .project-title{font-size:12px;font-style:normal;line-height:17px}footer .
 .project-info{position:fixed;top:0px;bottom:100px;left:0px;right:0px;background:rgba(255,255,255,0.7);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#b2ffffff, endColorstr=#b2ffffff);zoom:1}.project-info .close-info{cursor:pointer;margin:20px;display:block;width:42px;height:43px;overflow:hidden;background:url('../img/close.png') no-repeat -42px 0}.project-info .close-info:hover{background-position:0 0}
 .project-info h2{margin-bottom:0}
 .project-info a{color:#000;text-decoration:underline;font-size:12px;text-transform:uppercase}.project-info a:hover{color:#666}
-.project-info .project-label{font-size:12px;margin-bottom:30px}
+.project-info .project-label{font-size:12px;margin-bottom:30px;text-transform:uppercase}
 .project-info .recipe-label{font-size:12px}
 .img-responsive-height{max-height:100%;width:auto}
 .cursor-pointer{cursor:pointer}
