@@ -5,6 +5,12 @@
     model.fragment = ko.observable();
     model.project = ko.observable();
     model.projectSlide = ko.observable(0);
+    model.markActive = function($data) {
+        if($data.title === 'PROJECTS' && model.route() === "projects") {
+            return model.projectFilter() === null;
+        }
+        return $data.isActive();
+    };
     model.activeItem = ko.computed(function(){
         var route = router.activeInstruction() ? router.activeInstruction() : null;
         if(route) {
@@ -17,6 +23,17 @@
                 model.project(null);
             }
         }
+    });
+    model.projectFilter = ko.computed(function(){
+        if(model.route() === "projects") {
+            var params = router.activeInstruction().params;
+            if(params[0]) {
+                return params[0].toString().toUpperCase();
+            } else {
+                return null;
+            }
+        }
+        return null;
     });
     model.projectInfo = function() {
         app.trigger('details:info', true);

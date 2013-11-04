@@ -8,14 +8,14 @@
         <div class="col-md-2"><a class="brand-logo" href="#"><img src="img/logo.png" /></a></div>
         <div class="col-md-6">
             <ul class="nav nav-application" data-bind="foreach: mainNavigation">
-                <li data-bind="css: { active: isActive }">
+                <li data-bind="css: { active: $parent.markActive($data) }">
                     <a data-bind="attr: { href: hash }, html: title"></a>
                 </li>
             </ul>
             <!-- ko if: route() === 'projects' || route() === 'details' -->
             <span class="nav-divider"><img src="img/slash.png" /></span>
             <ul class="nav nav-application" data-bind="foreach: subNavigation('categories')">
-                <li>
+                <li data-bind="css: { active: $parent.projectFilter() === title }">
                     <a data-bind="attr: { href: hash + settings.id }, html: title"></a>
                 </li>
             </ul>
