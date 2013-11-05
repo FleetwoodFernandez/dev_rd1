@@ -6,7 +6,7 @@
 <footer>
     <div class="row">
         <div class="col-md-2"><a class="brand-logo" href="#"><img src="img/logo.png" /></a></div>
-        <div class="col-md-6">
+        <div class="col-md-8">
             <ul class="nav nav-application" data-bind="foreach: mainNavigation">
                 <li data-bind="css: { active: $parent.markActive($data) }">
                     <a data-bind="attr: { href: hash }, html: title"></a>
@@ -38,7 +38,7 @@
                 </div>
             <!-- /ko -->
         </div>
-        <div class="col-md-4">
+        <div class="col-md-2">
             <!-- ko if: project() && route() === 'details' -->
             <ul class="list-inline list-unstyled slide-navigation pull-right">
                 <li><span class="slide prev" data-bind="click: previous"></span></li>
