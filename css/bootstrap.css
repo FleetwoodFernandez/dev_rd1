@@ -836,7 +836,8 @@ th.hidden-lg,td.hidden-lg{display:table-cell !important}
 @media (min-width:1200px){.hidden-lg,tr.hidden-lg,th.hidden-lg,td.hidden-lg{display:none !important}}
 .visible-print,tr.visible-print,th.visible-print,td.visible-print{display:none !important}
 @media print{.visible-print{display:block !important}tr.visible-print{display:table-row !important} th.visible-print,td.visible-print{display:table-cell !important} .hidden-print,tr.hidden-print,th.hidden-print,td.hidden-print{display:none !important}}html,body{width:100%;min-width:1000px;height:100%;overflow:hidden;font-weight:300}
-.durandal-wrapper,#content-container,#container,.project-list,.project-list ul{height:100%}
+.durandal-wrapper,#content-container,#container,.project-list,.project-list ul,#container .row,#container .row div{height:100%}
+#container .row div a{display:block;height:100%}
 a{outline:0}
 #applicationHost{min-width:1000px;width:100%;height:auto !important;height:100%;overflow:hidden}
 #wrap{padding:0px;position:fixed;top:0px;bottom:100px;left:0px;right:0px;overflow:hidden}#wrap #content-container{margin-bottom:100px;overflow-x:hidden;overflow-y:auto}
