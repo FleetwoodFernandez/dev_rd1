@@ -15,7 +15,7 @@
             <!-- ko if: route() === 'projects' || route() === 'details' -->
             <span class="nav-divider"><img src="img/slash.png" /></span>
             <ul class="nav nav-application" data-bind="foreach: subNavigation('categories')">
-                <li data-bind="css: { active: $parent.projectFilter() === title }">
+                <li data-bind="css: { active: $parent.pageFilter() === title }">
                     <a data-bind="attr: { href: hash + settings.id }, html: title"></a>
                 </li>
             </ul>
@@ -26,7 +26,7 @@
             <!-- ko if: route() === 'about' -->
             <span class="nav-divider"><img src="img/slash.png" /></span>
             <ul class="nav nav-application" data-bind="foreach: subNavigation('about')">
-                <li>
+                <li data-bind="css: { active: $parent.pageFilter() === settings.id }">
                     <a data-bind="attr: { href: hash }, html: title"></a>
                 </li>
             </ul>

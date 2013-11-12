@@ -7,7 +7,7 @@
     model.projectSlide = ko.observable(0);
     model.markActive = function($data) {
         if($data.title === 'PROJECTS' && model.route() === "projects") {
-            return model.projectFilter() === null;
+            return model.pageFilter() === null;
         }
         return $data.isActive();
     };
@@ -24,13 +24,18 @@
             }
         }
     });
-    model.projectFilter = ko.computed(function(){
+    model.pageFilter = ko.computed(function(){
+        var params = router.activeInstruction() ? router.activeInstruction().params : null;
         if(model.route() === "projects") {
-            var params = router.activeInstruction().params;
             if(params[0]) {
                 return params[0].toString().toUpperCase();
             } else {
                 return null;
+            }
+        } else if (model.route() === "about") {
+            var frags = model.fragment().split("/");
+            if(frags.length > 1) {
+                return frags[1];
             }
         }
         return null;
