@@ -1,5 +1,6 @@
 ﻿<div class="project-list">
 	<ul data-bind="template: { foreach: project().assets }">
+		<!-- <li data-bind="style: { backgroundImage : 'url(' + path + ')' }"><img data-bind="attr: { src: path }" class="img-responsive-height" /></li> -->
 		<li><img data-bind="attr: { src: path }" class="img-responsive-height" /></li>
 	</ul>
 </div>
@@ -13,7 +14,7 @@
 		</section>
 		<section class="box-padding" data-bind="with: project().recipe">
 			<div class="recipe-label">PROJECT RECIPE:</div>
-			<a data-bind="attr: { href: path }"><!-- ko text: name --><!-- /ko --></a>
+			<a class="recipe-link" data-bind="attr: { href: path }"><!-- ko text: name --><!-- /ko --></a>
 		</section>
 	</div>
 	<div class="col-md-6">
