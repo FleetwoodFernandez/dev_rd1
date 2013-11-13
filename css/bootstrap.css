@@ -813,6 +813,7 @@ html,body{min-width:1000px !important;width:auto !important;width:100%;height:10
 #container a.contact-map{display:block;height:100%}
 a{outline:0}
 #applicationHost{min-width:1000px !important;width:auto !important;width:100%;height:auto !important;height:100%;overflow:hidden}
+#container{min-height:600px}
 #wrap{padding:0px;position:fixed;top:0px;bottom:100px;left:0px;right:0px;min-width:1000px;width:auto !important;width:100%;overflow:hidden}#wrap #content-container{min-width:1000px;width:auto !important;width:100%;margin-bottom:100px;overflow-x:hidden;overflow-y:auto}
 footer{position:fixed;bottom:0px;min-width:1000px !important;width:100%;height:100px;padding:20px}footer .row{min-width:1000px !important;width:100%}
 footer .brand-logo{padding:0}
