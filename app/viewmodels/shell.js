@@ -7,9 +7,7 @@
      });
     composition.addBindingHandler('slideshowInit', {
         init: function (element, valueAccessor) {
-            cbpBGSlideshow.init({}, $( '#cbp-bislideshow' ));
-            console.log($( '#cbp-bislideshow' ).children("li"))
-            console.log($( '#cbp-bislideshow' ).children("li").length)
+            cbpBGSlideshow.init({},     $( '#cbp-bislideshow' ));
         }
     });
     var model = {};
