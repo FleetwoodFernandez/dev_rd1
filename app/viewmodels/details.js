@@ -13,12 +13,11 @@
         self.closeInfo = function() {
             self.displayInfo(false);
         };
+        self.next = function() {
+            app.trigger('details:next');
+        };
         app.on('details:info').then(function(e) {
             self.displayInfo(e);
-        });
-        app.on('details:previous').then(function(id) {
-        });
-        app.on('details:next').then(function(id) {
         });
         app.on('details:slide').then(function(id) {
             self.slideid(id);

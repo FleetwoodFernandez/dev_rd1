@@ -140,5 +140,11 @@
         }
         return 'backsplash ' + css;
     });
+    app.on('details:previous').then(function(id) {
+        model.previous();
+    });
+    app.on('details:next').then(function(id) {
+        model.next();
+    });
     return model;
 });
