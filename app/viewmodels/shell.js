@@ -1,11 +1,17 @@
-﻿define(['plugins/router', 'durandal/app', 'durandal/system', 'knockout', 'dataservice', 'module', 'knockout', 'durandal/composition'], function (router, app, system, ko, dataservice, module, ko, composition) {
+﻿define(['plugins/router', 'durandal/app', 'durandal/system', 'knockout', 'dataservice', 'module', 'knockout', 'durandal/composition','cbpBGSlideshow', 'imageLoader'], function (router, app, system, ko, dataservice, module, ko, composition, slideshow, imageLoader) {
     composition.addBindingHandler('totalProcessSlides', {
-            init: function (element, valueAccessor) {
-                var val =  valueAccessor();
-                model.totalProcessSlides($(".process-list ul li").length);
-            }
-         });
-
+        init: function (element, valueAccessor) {
+            var val =  valueAccessor();
+            model.totalProcessSlides($(".process-list ul li").length);
+        }
+     });
+    composition.addBindingHandler('slideshowInit', {
+        init: function (element, valueAccessor) {
+            cbpBGSlideshow.init({}, $( '#cbp-bislideshow' ));
+            console.log($( '#cbp-bislideshow' ).children("li"))
+            console.log($( '#cbp-bislideshow' ).children("li").length)
+        }
+    });
     var model = {};
     model.router = router;
     model.route = ko.observable();

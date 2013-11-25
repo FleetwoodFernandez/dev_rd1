@@ -10,7 +10,7 @@
         'dataservice': '../app/viewmodels/dataservice',
         'bindings': '../lib/durandal/js/plugins/bindings',
         'imageLoader': '../lib/jquery/jquery.imagesloaded.min',
-        'cbpBGSlideshow': '../lib/jquery/cbpBGSlideshow.min',
+        'cbpBGSlideshow': '../lib/jquery/cbpBGSlideshow',
         'modernizr': '../lib/jquery/modernizr.custom'
     },
     shim: {

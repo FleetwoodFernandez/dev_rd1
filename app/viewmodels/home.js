@@ -1,6 +1,5 @@
-﻿define(['imageLoader', 'cbpBGSlideshow', 'modernizr'], function(imageLoader, cbp, modernizr) {
+﻿define(function() {
     var ctor = function () {
-    	cbpBGSlideshow.init();
     };
     return ctor;
 });
