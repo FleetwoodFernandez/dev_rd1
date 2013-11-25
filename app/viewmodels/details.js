@@ -3,7 +3,6 @@
     	var self = this;
     	self.project = ko.observable();
     	self.slideid = ko.observable();
-    	self.slideHeight = ko.observable();
         self.displayInfo = ko.observable(false);
         self.activate = function(id, slideid, info) {
         	self.project(dataservice.getProjectByID(id));

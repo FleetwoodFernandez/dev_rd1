@@ -832,17 +832,21 @@ footer .project-title{font-size:12px;font-style:normal;line-height:17px}footer .
 .backsplash.blog{background-image:url("../img/1.jpg")}
 .box-padding{margin:30px}
 .text-container{max-width:600px}
-.project-grid{padding:0;overflow:hidden;display:inline-block;background:#000;position:relative}.project-grid .project-details{position:absolute;left:20px;bottom:20px;color:#fff;font-size:24px;display:none}
+.project-grid{padding:0;overflow:hidden;display:inline-block;background:#000;position:relative}.project-grid .project-details{position:absolute;left:20px;top:50%;color:#fff;font-size:24px;display:none}
 .project-grid .thumb{opacity:1;filter:alpha(opacity=100)}
 .project-grid:hover .project-details{display:block}
 .project-grid:hover .thumb{opacity:.3;filter:alpha(opacity=30)}
-.project-list{overflow:hidden}.project-list ul{white-space:nowrap;font-size:0;display:block;margin:0;padding:0}.project-list ul li{display:inline;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;background-position:center center}.project-list ul li img{display:inline-block;vertical-align:middle}
-@media screen and (-webkit-min-device-pixel-ratio:0){}.project-info{position:fixed;top:0px;bottom:100px;left:0px;right:0px;background:rgba(255,255,255,0.8);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ccffffff, endColorstr=#ccffffff);zoom:1;overflow-y:auto}.project-info .close-info{cursor:pointer;margin:20px 5px;display:block;width:42px;height:43px;overflow:hidden;background:url('../img/close.png') no-repeat -42px 0}.project-info .close-info:hover{background-position:0 0}
+.project-list{overflow:hidden}.project-list ul{white-space:nowrap;font-size:0;display:block;margin:0;padding:0}.project-list ul li{display:inline;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;background-position:center center}.project-list ul li img{display:inline-block}
+.project-info{position:fixed;top:0px;bottom:100px;left:0px;right:0px;background:rgba(255,255,255,0.8);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ccffffff, endColorstr=#ccffffff);zoom:1;overflow-y:auto}.project-info .close-info{cursor:pointer;margin:20px 5px;display:block;width:42px;height:43px;overflow:hidden;background:url('../img/close.png') no-repeat -42px 0}.project-info .close-info:hover{background-position:0 0}
 .project-info h2{margin-bottom:0}
 .project-info a{color:#000;text-decoration:underline;font-size:12px}.project-info a:hover{color:#666}
 .project-info a.recipe-link{display:block;text-transform:uppercase;margin-top:-8px}
 .project-info .project-label{font-size:12px;margin-top:-3px;margin-bottom:30px;text-transform:uppercase}
 .project-info .recipe-label{font-size:12px}
+.profile-link{color:#000;text-decoration:underline;font-size:12px}.profile-link:hover{color:#666}
+.profile-link.recipe-link{display:block;text-transform:uppercase;margin-top:-8px}
+.process-list{overflow:hidden}.process-list ul{white-space:nowrap;display:block;margin:0;padding:0}.process-list ul li{display:inline}.process-list ul li img{display:inline-block;vertical-align:top}
+.process-list ul li .text-container{display:inline-block;white-space:normal}
 .img-responsive-height{max-height:100%;width:auto}
 .cursor-pointer{cursor:pointer}
 .cbp-bislideshow{list-style:none;width:100%;height:100%;position:fixed;top:0;left:0;z-index:-1;padding:0;margin:0}

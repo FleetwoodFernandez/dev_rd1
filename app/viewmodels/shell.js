@@ -1,10 +1,19 @@
-﻿define(['plugins/router', 'durandal/app', 'durandal/system', 'knockout', 'dataservice', 'module', 'knockout'], function (router, app, system, ko, dataservice, module, ko) {
+﻿define(['plugins/router', 'durandal/app', 'durandal/system', 'knockout', 'dataservice', 'module', 'knockout', 'durandal/composition'], function (router, app, system, ko, dataservice, module, ko, composition) {
+    composition.addBindingHandler('totalProcessSlides', {
+            init: function (element, valueAccessor) {
+                var val =  valueAccessor();
+                model.totalProcessSlides($(".process-list ul li").length);
+            }
+         });
+
     var model = {};
     model.router = router;
     model.route = ko.observable();
     model.fragment = ko.observable();
     model.project = ko.observable();
     model.projectSlide = ko.observable(0);
+    model.processSlide = ko.observable(0);
+    model.totalProcessSlides = ko.observable(0);
     model.markActive = function($data) {
         if($data.title === 'PROJECTS' && model.route() === "projects") {
             return model.pageFilter() === null;
@@ -64,14 +73,22 @@
     model.previous = function() {
         var i = Math.max(0, model.projectSlide() - 1);
         model.projectSlide(i);
-        //router.navigate('#details/' + model.project().alias + "/" + i);
         app.trigger('details:slide', model.projectSlide());
     };
     model.next = function() {
         var i = Math.min(model.projectSlide() + 1, model.project().assets.length - 1);
         model.projectSlide(i);
-        //router.navigate('#details/' + model.project().alias + "/" + i);
         app.trigger('details:slide', model.projectSlide());
+    };
+    model.previousProcess = function() {
+        var i = Math.max(0, model.processSlide() - 1);
+        model.processSlide(i);
+        app.trigger('process:slide', model.processSlide());
+    };
+    model.nextProcess = function() {
+        var i = Math.min(model.processSlide() + 1, model.totalProcessSlides() - 1);
+        model.processSlide(i);
+        app.trigger('process:slide', model.processSlide());
     };
     model.activate = function () {
         var routes = [[

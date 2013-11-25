@@ -6,7 +6,7 @@
 <footer>
     <div class="row">
         <div class="col-md-2"><a class="brand-logo" href="#"><img src="img/logo.png" /></a></div>
-        <div class="col-md-8">
+        <div class="col-md-7">
             <ul class="nav nav-application" data-bind="foreach: mainNavigation">
                 <li data-bind="css: { active: $parent.markActive($data) }">
                     <a data-bind="attr: { href: hash }, html: title"></a>
@@ -38,12 +38,19 @@
                 </div>
             <!-- /ko -->
         </div>
-        <div class="col-md-2">
+        <div class="col-md-3">
             <!-- ko if: project() && route() === 'details' -->
             <ul class="list-inline list-unstyled slide-navigation pull-right">
                 <li><span class="slide prev" data-bind="click: previous"></span></li>
                 <li><!-- ko text: formatSlideNumber(parseInt(projectSlide() + 1, 10)) --><!-- /ko -->/<!-- ko text: formatSlideNumber(project().assets.length) --><!-- /ko --></li>
                 <li><span class="slide next" data-bind="click: next"></span></li>
+            </ul>
+            <!-- /ko -->
+            <!-- ko if: pageFilter() === 'process' -->
+            <ul class="list-inline list-unstyled slide-navigation pull-right">
+                <li><span class="slide prev" data-bind="click: previousProcess"></span></li>
+                <li><!-- ko text: formatSlideNumber(parseInt(processSlide() + 1, 10)) --><!-- /ko -->/<!-- ko text: formatSlideNumber(totalProcessSlides()) --><!-- /ko --></li>
+                <li><span class="slide next" data-bind="click: nextProcess"></span></li>
             </ul>
             <!-- /ko -->
         </div>
