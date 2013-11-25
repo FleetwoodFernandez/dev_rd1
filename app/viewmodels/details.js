@@ -16,6 +16,10 @@
         app.on('details:info').then(function(e) {
             self.displayInfo(e);
         });
+        app.on('details:previous').then(function(id) {
+        };
+        app.on('details:next').then(function(id) {
+        };
         app.on('details:slide').then(function(id) {
             self.slideid(id);
             var slides = $(".project-list ul li").slice(0, id),

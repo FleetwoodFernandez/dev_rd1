@@ -814,8 +814,8 @@ html,body{min-width:1000px;width:auto !important;width:100%;height:100%;font-wei
 a{outline:0}
 #applicationHost{min-width:1000px !important;width:auto !important;width:100%;height:auto !important;height:100%;overflow-x:auto}
 #container{min-height:600px}
-#wrap{padding:0px;position:fixed;top:0px;bottom:100px;left:0px;right:0px;min-width:1000px;width:auto !important;width:100%;overflow:hidden}#wrap #content-container{min-width:1000px;width:auto !important;width:100%;margin-bottom:100px;overflow-x:hidden;overflow-y:auto}
-footer{position:fixed;bottom:0px;min-width:1000px !important;width:100%;height:100px;padding:20px}footer .row{min-width:1000px !important;width:100%}
+#wrap{padding:0px;position:absolute;top:0px;bottom:100px;left:0px;right:0px;min-width:1000px;width:auto !important;width:100%;overflow:hidden}#wrap #content-container{min-width:1000px;width:auto !important;width:100%;margin-bottom:100px;overflow-x:hidden;overflow-y:auto}
+footer{position:absolute;bottom:0px;min-width:1000px !important;width:100%;height:100px;padding:20px}footer .row{min-width:1000px !important;width:100%}
 footer .brand-logo{padding:0}
 footer .nav-application{float:left !important;min-width:90px}footer .nav-application li{display:list-item;margin-bottom:0px;line-height:0}footer .nav-application li a{display:inline;padding:0;font-size:12px;font-style:normal;line-height:17px}footer .nav-application li a:hover{background:transparent}
 footer .nav-application li.active a{color:#000}
