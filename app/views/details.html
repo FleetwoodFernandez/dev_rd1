@@ -1,6 +1,5 @@
 ﻿<div class="project-list">
 	<ul data-bind="template: { foreach: project().assets }">
-		<!-- <li data-bind="style: { backgroundImage : 'url(' + path + ')' }"><img data-bind="attr: { src: path }" class="img-responsive-height" /></li> -->
 		<li data-bind="click: $parent.next, style: { cursor: 'pointer' }"><img data-bind="attr: { src: path }" class="img-responsive-height" /></li>
 	</ul>
 </div>
