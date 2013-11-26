@@ -846,7 +846,7 @@ footer .project-title{font-size:12px;font-style:normal;line-height:17px}footer .
 .profile-link{color:#000;text-decoration:underline;font-size:12px}.profile-link:hover{color:#666}
 .profile-link.recipe-link{display:block;text-transform:uppercase;margin-top:-8px}
 .process-list{overflow:hidden}.process-list ul{white-space:nowrap;display:block;margin:0;padding:0}.process-list ul li{display:inline}.process-list ul li img{display:inline-block;vertical-align:top}
-.process-list ul li .text-container{display:inline-block;white-space:normal}
+.process-list ul li .text-container{display:inline-block;white-space:normal}.process-list ul li .text-container h2{margin-top:0}
 .img-responsive-height{max-height:100%;width:auto}
 .cursor-pointer{cursor:pointer}
 .cbp-bislideshow{list-style:none;width:100%;height:100%;z-index:-1;padding:0;margin:0}
