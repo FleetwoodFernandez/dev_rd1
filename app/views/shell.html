@@ -9,7 +9,12 @@
         <div class="col-md-7">
             <ul class="nav nav-application" data-bind="foreach: mainNavigation">
                 <li data-bind="css: { active: $parent.markActive($data) }">
-                    <a data-bind="attr: { href: hash }, html: title"></a>
+                    <!-- ko if: $parent.isExternal($data) -->
+                        <a data-bind="attr: { href: externalURL }, html: title"></a>
+                    <!-- /ko -->
+                    <!-- ko ifnot: $parent.isExternal($data) -->
+                        <a data-bind="attr: { href: hash }, html: title"></a>
+                    <!-- /ko -->
                 </li>
             </ul>
             <!-- ko if: route() === 'projects' || route() === 'details' -->

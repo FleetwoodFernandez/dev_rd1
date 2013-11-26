@@ -7,7 +7,7 @@
      });
     composition.addBindingHandler('slideshowInit', {
         init: function (element, valueAccessor) {
-            cbpBGSlideshow.init({},     $( '#cbp-bislideshow' ));
+            cbpBGSlideshow.init({}, $( '#cbp-bislideshow' ));
         }
     });
     var model = {};
@@ -18,6 +18,11 @@
     model.projectSlide = ko.observable(0);
     model.processSlide = ko.observable(0);
     model.totalProcessSlides = ko.observable(0);
+    model.isExternal = function($data) {
+        if($data.externalURL)
+            return true;
+        return false;
+    };
     model.markActive = function($data) {
         if($data.title === 'PROJECTS' && model.route() === "projects") {
             return model.pageFilter() === null;
@@ -99,7 +104,7 @@
                 { route: '', moduleId: 'viewmodels/home' },
                 { route: 'projects(/:type)', hash:'#projects', title: 'PROJECTS', moduleId: 'viewmodels/projects', nav: true, sortId: 1 },
                 { route: 'about', hash:'#about', title: 'ABOUT', moduleId: 'viewmodels/about', nav: true, sortId: 2 },
-                { route: 'blog', title: 'BLOG', moduleId: 'viewmodels/blog', nav: true, sortId: 3 },
+                { route: 'blog', title: 'BLOG', externalURL: 'http://ffarqblog.tumblr.com/', nav: true, sortId: 3 },
                 { route: 'contact', title: 'CONTACT', moduleId: 'viewmodels/contact', nav: true, sortId: 4 },
                 { route: 'details/:id', moduleId: 'viewmodels/details' },
                 { route: 'about/fleetwood', title: 'HUNTER FLEETWOOD', moduleId: 'viewmodels/fleetwood', settings: { type: 'about', id: 'fleetwood' }, nav: true },
