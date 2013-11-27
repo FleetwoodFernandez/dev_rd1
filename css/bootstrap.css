@@ -832,7 +832,7 @@ footer .project-title{font-size:12px;font-style:normal;line-height:17px}footer .
 .backsplash.blog{background-image:url("../img/1.jpg")}
 .box-padding{margin:30px}
 .text-container{max-width:600px}
-.project-grid{padding:0;overflow:hidden;display:inline-block;background:#000;position:relative}.project-grid .project-details{position:absolute;left:20px;top:50%;color:#fff;font-size:24px;display:none}
+.project-grid{padding:0;overflow:hidden;display:inline-block;background:#000;position:relative}.project-grid .project-details{position:absolute;left:20px;top:48%;color:#fff;font-size:24px;display:none}
 .project-grid .thumb{opacity:1;filter:alpha(opacity=100)}
 .project-grid:hover .project-details{display:block}
 .project-grid:hover .thumb{opacity:.3;filter:alpha(opacity=30)}
