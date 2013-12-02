@@ -247,16 +247,31 @@ define(function(require){
 			alias: "hillstoneRestaurant",
 			name: "Hillstone Restaurant Group",
 			location: "MULTIPLE LOCATIONS",
-			description: "<p></p>",
+			description: "<p>The proposal for this public art program sponsored by The Downtown Alliance in New York City utilizes common safety-related construction objects and repurposes them as devices of decoration for a typical barricade. Elements that normally speak of caution become a study of texture and color, and transform urban blight into an art installation. The cones are sheared off at various points to allow for view portals while passing through the barricade.</p>",
 			recipe: {
 				name: "Surf and Turf",
 				path: "assets/recipe/Surf_and_turf.docx"
 			},
-			thumbnail: "img/projects/peninsula/Peninsula_thumb.jpg",
+			thumbnail: "img/projects/hillstone_restaurant_group/HRG_thumbnail.jpg",
 			categories: ["commercial"],
 			assets: [
 				{
-					path: "img/projects/peninsula/Peninsula_01.jpg"
+					path: "img/projects/hillstone_restaurant_group/HRG_01.jpg"
+				},
+				{
+					path: "img/projects/hillstone_restaurant_group/HRG_02.jpg"
+				},
+				{
+					path: "img/projects/hillstone_restaurant_group/HRG_03.jpg"
+				},
+				{
+					path: "img/projects/hillstone_restaurant_group/HRG_04.jpg"
+				},
+				{
+					path: "img/projects/hillstone_restaurant_group/HRG_05.jpg"
+				},
+				{
+					path: "img/projects/hillstone_restaurant_group/HRG_06.jpg"
 				}
 			]
 		},
@@ -264,16 +279,16 @@ define(function(require){
 			alias: "114WineShop",
 			name: "114 Wine Shop",
 			location: "BEVERLY HILLS, CA",
-			description: "<p></p>",
+			description: "<p>In Construction, more information and images coming soon.</p>",
 			recipe: {
 				name: "Surf and Turf",
 				path: "assets/recipe/Surf_and_turf.docx"
 			},
-			thumbnail: "img/projects/peninsula/Peninsula_thumb.jpg",
+			thumbnail: "img/projects/114_wine_shop/Wine_Thumbnail.jpg",
 			categories: ["commercial"],
 			assets: [
 				{
-					path: "img/projects/peninsula/Peninsula_01.jpg"
+					path: "img/projects/114_wine_shop/Wine_01.jpg"
 				}
 			]
 		},
@@ -498,11 +513,17 @@ define(function(require){
 				name: "Surf and Turf",
 				path: "assets/recipe/Surf_and_turf.docx"
 			},
-			thumbnail: "img/projects/peninsula/Peninsula_thumb.jpg",
+			thumbnail: "img/projects/dac/DAC_thumbnail.jpg",
 			categories: ["speculative"],
 			assets: [
 				{
-					path: "img/projects/peninsula/Peninsula_01.jpg"
+					path: "img/projects/dac/DAC_01.jpg"
+				},
+				{
+					path: "img/projects/dac/DAC_02.jpg"
+				},
+				{
+					path: "img/projects/dac/DAC_03.jpg"
 				}
 			]
 		},
@@ -545,16 +566,31 @@ define(function(require){
 			alias: "reconstruction",
 			name: "RECONSTRUCTION",
 			location: "HYPOTHETICAL SITE",
-			description: "<p></p>",
+			description: "<p>The proposal for this public art program sponsored by The Downtown Alliance in New York City utilizes common safety-related construction objects and repurposes them as devices of decoration for a typical barricade. Elements that normally speak of caution become a study of texture and color, and transform urban blight into an art installation. The cones are sheared off at various points to allow for view portals while passing through the barricade.</p>",
 			recipe: {
 				name: "Surf and Turf",
 				path: "assets/recipe/Surf_and_turf.docx"
 			},
-			thumbnail: "img/projects/peninsula/Peninsula_thumb.jpg",
+			thumbnail: "img/projects/re_construction/ReCon_Thumbnail.jpg",
 			categories: ["speculative"],
 			assets: [
 				{
-					path: "img/projects/peninsula/Peninsula_01.jpg"
+					path: "img/projects/re_construction/ReCon_01.jpg"
+				},
+				{
+					path: "img/projects/re_construction/ReCon_02.jpg"
+				},
+				{
+					path: "img/projects/re_construction/ReCon_03.jpg"
+				},
+				{
+					path: "img/projects/re_construction/ReCon_04.jpg"
+				},
+				{
+					path: "img/projects/re_construction/ReCon_05.jpg"
+				},
+				{
+					path: "img/projects/re_construction/ReCon_06.jpg"
 				}
 			]
 		}
