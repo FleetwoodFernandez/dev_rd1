@@ -811,7 +811,7 @@ button.close{padding:0;cursor:pointer;background:transparent;border:0;-webkit-ap
 html,body{min-width:1200px;width:auto !important;width:100%;height:100%;font-weight:300}
 .durandal-wrapper,#content-container,#container,.project-list,.project-list ul,#container .row,#container .row div{height:100%}
 #container a.contact-map{display:block;height:100%}
-a{outline:0}
+a{outline:none;-moz-outline-style:none}a:focus{outline:none;-moz-outline-style:none}
 #applicationHost{min-width:1200px !important;width:auto !important;width:100%;height:auto !important;height:100%;overflow-x:auto}
 #container{min-height:600px}
 #wrap{padding:0px;position:absolute;top:0px;bottom:100px;left:0px;right:0px;min-width:1200px;width:auto !important;width:100%;overflow:hidden}#wrap #content-container{min-width:1200px;width:auto !important;width:100%;margin-bottom:100px;overflow-x:hidden;overflow-y:auto}

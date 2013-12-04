@@ -21,7 +21,7 @@ define(function(require){
 	service.projects = [
 		{
 			alias: "tathouse",
-			name: "TAT HOUSE",
+			name: "TAT House",
 			location: "SANTA MONICA CA",
 			description: "<p></p>",
 			recipe: {
@@ -39,7 +39,7 @@ define(function(require){
 		{
 			alias: "balhouse",
 			name: "BAL House",
-			location: "LA GRANA, Spain",
+			location: "LA GRAñA, Spain",
 			description: "<p>The house began as a studio for an artist. Situated on a hillside overlooking the Atlantic Ocean, the project takes advantage of striking views while providing an appropriate space for painting and displaying the artist’s work. In addition to the art studio, the program includes accommodations for visiting family. The site is a heavily graded, narrow, south facing parcel with strenuous zoning restrictions. The footprint of the project evolved from these unique programmatic and physical requirements.  Responding to the dichotomous relationships contained in the program, the house developed as a series of dialogues between paired elements. As the central component, the studio acts as a container by which all other spaces are enclosed. On the exterior, an economy of materials dominated by pigmented, cast in place concrete heightens the simplicity of form.</p>",
 			recipe: {
 				name: "Surf and Turf",
@@ -157,7 +157,7 @@ define(function(require){
 			alias: "solloft",
 			name: "SOL Loft",
 			location: "SANTA MONICA, CA",
-			description: "<p>A bachelor’s traditional ocean front one bedroom flat is transformed into a beach loft.  The client, an avid surfer, wanted open living spaces and uninterrupted views of the ocean.  This was achieved by synthetizing the service functions into an efficient core, while removing all unnecessary partitions. The resultant spaces are flexible and fluid. Exposing the existing concrete structure allowed for taller ceiling heights at the window walls, drawing light deeper into the space.</p>",
+			description: "<p>A bachelor’s traditional ocean front one bedroom flat is transformed into a beach loft.  The client, an avid surfer, wanted open living spaces and uninterrupted views of the ocean.  This was achieved by synthesizing the service functions into an efficient core, while removing all unnecessary partitions. The resultant spaces are flexible and fluid. Exposing the existing concrete structure allowed for taller ceiling heights at the window walls, drawing light deeper into the space.</p>",
 			recipe: {
 				name: "Surf and Turf",
 				path: "assets/recipe/Surf_and_turf.docx"
@@ -247,7 +247,7 @@ define(function(require){
 			alias: "hillstoneRestaurant",
 			name: "Hillstone Restaurant Group",
 			location: "MULTIPLE LOCATIONS",
-			description: "<p>The proposal for this public art program sponsored by The Downtown Alliance in New York City utilizes common safety-related construction objects and repurposes them as devices of decoration for a typical barricade. Elements that normally speak of caution become a study of texture and color, and transform urban blight into an art installation. The cones are sheared off at various points to allow for view portals while passing through the barricade.</p>",
+			description: "<p>Hillstone Restaurant Group owns several successful high-end dining establishments throughout the country, including the beloved Houston’s restaurants. Family owned and operated since 1976, HRG is also a supporter of art and architecture, seamlessly blending both into carefully crafted dining environments. Fleetwood/Fernandez has collaborated with the company’s design and construction team on many projects, and is currently working on two new spaces: a restaurant and a pizza shop in Montecito, California. The projects are in the construction document phase, more information and images coming soon.</p>",
 			recipe: {
 				name: "Surf and Turf",
 				path: "assets/recipe/Surf_and_turf.docx"
@@ -398,8 +398,8 @@ define(function(require){
 			]
 		},
 		{
-			alias: "CanyonPanthers",
-			name: "Canyon Panthers",
+			alias: "CanyonPartners",
+			name: "Canyon Partners",
 			location: "DEVONSHIRE HOUSE, LONDON, UK",
 			description: "<p></p>",
 			recipe: {
@@ -467,7 +467,7 @@ define(function(require){
 			alias: "dumpster",
 			name: "Dumpster",
 			location: "BROOKLYN, NY",
-			description: "<p>After moving to a smaller studio, artist Mac Premo was faced with the dilemma of disposing of a lifetime of archived personal artifacts. He decided instead to create the largest collage he had ever made using a 30 yard dumpster as the canvas. The Dumpster’s first installation was at The Dumbo Arts Festival in New York in September 2011 and has since travelled widely, including to Pulse Miami Contemporary Art Fair. We designed a translucent, elastic membrane roof over a custom metal frame. The roof is light, can be easily assembled and disassembled, allows natural light in, and becomes a glowing beacon at night.</p>",
+			description: "<p>After moving to a smaller studio, artist Mac Premo was faced with the dilemma of disposing of a lifetime of archived personal artifacts. He decided instead to create the largest collage he had ever made using a 30 yard dumpster as the canvas. The Dumpster’s first installation was at The Dumbo Arts Festival in New York in September 2011 and has since traveled widely, including to Pulse Miami Contemporary Art Fair. We designed a translucent, elastic membrane roof over a custom metal frame. The roof is light, can be easily assembled and disassembled, allows natural light in, and becomes a glowing beacon at night.</p>",
 			recipe: {
 				name: "Surf and Turf",
 				path: "assets/recipe/Surf_and_turf.docx"
@@ -564,7 +564,7 @@ define(function(require){
 		},
 		{
 			alias: "reconstruction",
-			name: "RECONSTRUCTION",
+			name: "RE:Construction",
 			location: "HYPOTHETICAL SITE",
 			description: "<p>The proposal for this public art program sponsored by The Downtown Alliance in New York City utilizes common safety-related construction objects and repurposes them as devices of decoration for a typical barricade. Elements that normally speak of caution become a study of texture and color, and transform urban blight into an art installation. The cones are sheared off at various points to allow for view portals while passing through the barricade.</p>",
 			recipe: {
