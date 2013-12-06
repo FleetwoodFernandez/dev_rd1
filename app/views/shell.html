@@ -1,9 +1,8 @@
 ﻿<div id="wrap">
-    <div id="content-container" data-bind="attr: { 'class': getBackground }">
-        <div id="container" data-bind="router: { transition:'entrance', fadeOnly: true }"></div>
-    </div>
+    <div id="content-container" data-bind="router: { transition:'entrance', fadeOnly: true }"></div>
+    <div id="push"></div>
 </div>
-<footer>
+<div id="footer">
     <div class="row">
         <div class="col-md-2"><a class="brand-logo" href="#"><img src="img/logo.png" /></a></div>
         <div class="col-md-7">
@@ -47,17 +46,17 @@
             <!-- ko if: project() && route() === 'details' -->
             <ul class="list-inline list-unstyled slide-navigation pull-right">
                 <li><span class="slide prev" data-bind="click: previous"></span></li>
-                <li><!-- ko text: formatSlideNumber(parseInt(projectSlide() + 1, 10)) --><!-- /ko -->/<!-- ko text: formatSlideNumber(project().assets.length) --><!-- /ko --></li>
+                <li class="number"><!-- ko text: formatSlideNumber(parseInt(projectSlide() + 1, 10)) --><!-- /ko -->/<!-- ko text: formatSlideNumber(project().assets.length) --><!-- /ko --></li>
                 <li><span class="slide next" data-bind="click: next"></span></li>
             </ul>
             <!-- /ko -->
             <!-- ko if: pageFilter() === 'process' -->
             <ul class="list-inline list-unstyled slide-navigation pull-right">
                 <li><span class="slide prev" data-bind="click: previousProcess"></span></li>
-                <li><!-- ko text: formatSlideNumber(parseInt(processSlide() + 1, 10)) --><!-- /ko -->/<!-- ko text: formatSlideNumber(totalProcessSlides()) --><!-- /ko --></li>
+                <li class="number"><!-- ko text: formatSlideNumber(parseInt(processSlide() + 1, 10)) --><!-- /ko -->/<!-- ko text: formatSlideNumber(totalProcessSlides()) --><!-- /ko --></li>
                 <li><span class="slide next" data-bind="click: nextProcess"></span></li>
             </ul>
             <!-- /ko -->
         </div>
     </div>
-</footer>
+</div>
