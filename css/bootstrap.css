@@ -853,7 +853,7 @@ a{outline:none;-moz-outline-style:none}a:focus{outline:none;-moz-outline-style:n
 .no-js.no-backgroundsize .cbp-bislideshow li:first-child{opacity:1}
 .no-js.backgroundsize .cbp-bislideshow li:first-child img{display:block}
 .cbp-rfgrid{margin:0;padding:0;list-style:none;position:relative;width:100%}
-.cbp-rfgrid li{position:relative;float:left;overflow:hidden;width:16.6666667%;width:-webkit-calc(20%);width:calc(20%);height:259px}
+.cbp-rfgrid li{position:relative;float:left;overflow:hidden;width:25%;width:-webkit-calc(25%);width:calc(25%)}
 .cbp-rfgrid li a,.cbp-rfgrid li a img{display:block;width:100%;cursor:pointer}
 .cbp-rfgrid li a img{max-width:100%}
 .cbp-rfgrid li a div{position:absolute;left:0;top:0;right:0;bottom:0;background:rgba(0,0,0,0.3);display:-webkit-flex;display:-moz-flex;display:-ms-flex;display:flex;-webkit-align-items:center;-moz-align-items:center;-ms-align-items:center;align-items:center;text-align:center;opacity:0}
