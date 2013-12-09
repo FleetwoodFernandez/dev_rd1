@@ -2,6 +2,9 @@
     var ctor = function () {
     	var self = this;
     	self.slideid = ko.observable();
+        self.next = function () {
+            app.trigger('process:next');
+        };
     	app.on('process:slide').then(function(id) {
             self.slideid(id);
             var slides = $(".process-list ul li").slice(0, id),

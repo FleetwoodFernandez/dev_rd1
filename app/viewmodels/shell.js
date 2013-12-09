@@ -151,5 +151,8 @@
     app.on('details:next').then(function(id) {
         model.next();
     });
+    app.on('process:next').then(function(id) {
+        model.nextProcess();
+    });
     return model;
 });
