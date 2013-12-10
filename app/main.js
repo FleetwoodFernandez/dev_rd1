@@ -9,7 +9,7 @@
         'jquery': '../lib/jquery/jquery-1.9.1',
         'dataservice': '../app/viewmodels/dataservice',
         'bindings': '../lib/durandal/js/plugins/bindings',
-        'imageLoader': '../lib/jquery/jquery.imagesloaded.min',
+        'imageLoader': '../lib/jquery/imagesloaded.pkgd.min',
         'cbpBGSlideshow': '../lib/jquery/cbpBGSlideshow',
         'modernizr': '../lib/jquery/modernizr.custom'
     },
