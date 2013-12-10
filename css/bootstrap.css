@@ -822,7 +822,7 @@ a{outline:none;-moz-outline-style:none}a:focus{outline:none;-moz-outline-style:n
 #footer .nav-application li.active a{color:#000}
 #footer .nav-divider{float:left !important;margin-right:20px}
 #footer .project-title{font-size:12px;font-style:normal;line-height:17px}#footer .project-title h2{margin-top:8px;margin-bottom:1px}
-@media screen and (max-width:1200px){#wrap{position:static}#wrap #content-container{margin-bottom:0} #footer{position:static}}@media (max-width:767px){#footer{margin-left:-20px;margin-right:-20px;padding-left:20px;padding-right:20px}}.slide-navigation{margin-top:10px}.slide-navigation li{vertical-align:middle;padding:0 0 0 18px;font-size:12px}
+@media only screen{.touch #wrap{position:static}.touch #wrap #content-container{margin-bottom:0} .touch #footer{position:static}}@media (max-width:1200px){#wrap{position:static}#wrap #content-container{margin-bottom:0} #footer{position:static}}@media (max-width:767px){#footer{margin-left:-20px;margin-right:-20px;padding-left:20px;padding-right:20px}}.slide-navigation{margin-top:10px}.slide-navigation li{vertical-align:middle;padding:0 0 0 18px;font-size:12px}
 .slide-navigation .slide{cursor:pointer;display:inline-block;width:24px;height:43px;overflow:hidden}.slide-navigation .slide.prev{background:url('../img/prev.png') no-repeat 0 0}
 .slide-navigation .slide.next{background:url('../img/next.png') no-repeat 0 0}
 .slide-navigation .slide:hover{background-position:-24px 0}
