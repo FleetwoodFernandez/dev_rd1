@@ -13,10 +13,31 @@
     composition.addBindingHandler('fadeImageLoader', {
         init: function(element, valueAccessor) {
             $(".project-list ul li").imagesLoaded(function() {
-                 console.log(this)
+                 //console.log(this)
             });
         }
-    })
+    });
+    composition.addBindingHandler('gridHeightCheck', {
+        init: function(element, valueAccessor) {
+            // var checkSize = function() {
+            //     var grid = $(".cbp-rfgrid"),
+            //         children = grid.children("li"),
+            //         min = children && children.length > 0 ? $(children[0]).outerHeight() : 9999;
+            //     $.each(children, function(i, elm) {
+            //         if(min == 0) {
+            //             min = $(elm).outerHeight();
+            //         } else {
+            //             min = Math.min(min, Math.max($(elm).outerHeight(), 0));
+            //         }
+            //     });
+            //     $.each(children, function(i, elm) {
+            //         $(elm).find("img").height(min);
+            //     });
+            // };
+            // $(window).resize(checkSize);
+            // checkSize();
+        }
+    });
     var model = {};
     model.router = router;
     model.route = ko.observable();
