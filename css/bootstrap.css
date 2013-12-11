@@ -811,10 +811,10 @@ button.close{padding:0;cursor:pointer;background:transparent;border:0;-webkit-ap
 html,body{min-width:1200px;width:auto !important;width:100%;height:100%;font-weight:300}
 .durandal-wrapper,#content-container,#container,.project-list,.project-list ul,#container .row,#container .row div{height:100%}
 .col-crop{overflow:hidden}
-#container a.contact-map{display:block;height:100%}
+#content-container a.contact-map{display:block;height:100%}
 a{outline:none;-moz-outline-style:none}a:focus{outline:none;-moz-outline-style:none}
 #applicationHost{min-width:1200px !important;width:auto !important;width:100%;height:auto !important;height:100%}
-#container{min-height:600px}
+#content-container{min-height:600px}
 #wrap{padding:0px;position:absolute;top:0px;bottom:100px;left:0px;right:0px;min-width:1200px;width:auto !important;width:100%;overflow:hidden}#wrap #content-container{min-width:1200px;width:auto !important;width:100%;margin-bottom:100px;overflow-x:hidden;overflow-y:auto}
 #footer{position:absolute;bottom:0px;min-width:1200px !important;width:100%;height:100px;padding:20px}#footer .row{min-width:1200px !important;width:100%}
 #footer .brand-logo{padding:0}
@@ -846,8 +846,8 @@ a{outline:none;-moz-outline-style:none}a:focus{outline:none;-moz-outline-style:n
 .process-list ul li .text-container{display:inline-block;white-space:normal}.process-list ul li .text-container h2{margin-top:0}
 .img-responsive-height{max-height:100%;width:auto}
 .cursor-pointer{cursor:pointer}
-.cbp-bislideshow{list-style:none;width:100%;height:100%;z-index:-1;padding:0;margin:0}
-.cbp-bislideshow li{position:absolute;width:101%;height:101%;top:-0.5%;left:-0.5%;opacity:0;-webkit-transition:opacity 1s;-moz-transition:opacity 1s;transition:opacity 1s}
+.cbp-bislideshow{list-style:none;width:100%;height:100%;min-height:600px;z-index:-1;padding:0;margin:0}
+.cbp-bislideshow li{position:absolute;width:101%;height:101%;min-height:600px;top:-0.5%;left:-0.5%;opacity:0;-webkit-transition:opacity 1s;-moz-transition:opacity 1s;transition:opacity 1s}
 .backgroundsize .cbp-bislideshow li{-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;background-position:center center}
 .backgroundsize .cbp-bislideshow li img{display:none}
 .cbp-bislideshow li img{display:block;width:100%}
@@ -857,7 +857,7 @@ a{outline:none;-moz-outline-style:none}a:focus{outline:none;-moz-outline-style:n
 .cbp-rfgrid li{position:relative;float:left;overflow:hidden;width:25%;width:-webkit-calc(25%);width:calc(25%)}
 .cbp-rfgrid li a,.cbp-rfgrid li a img{display:block;width:100%;cursor:pointer}
 .cbp-rfgrid li a img{max-width:100%;vertical-align:baseline}
-.cbp-rfgrid li a div{position:absolute;left:0;top:0;right:0;bottom:0;background:rgba(0,0,0,0.3);display:-webkit-flex;display:-moz-flex;display:-ms-flex;display:flex;-webkit-align-items:center;-moz-align-items:center;-ms-align-items:center;align-items:center;text-align:center;opacity:0}
+.cbp-rfgrid li a div{position:absolute;left:0;top:0;right:0;bottom:0;background:rgba(0,0,0,0.8);display:-webkit-flex;display:-moz-flex;display:-ms-flex;display:flex;-webkit-align-items:center;-moz-align-items:center;-ms-align-items:center;align-items:center;text-align:center;opacity:0}
 .cbp-rfgrid li a:hover div{opacity:1}
 .cbp-rfgrid li a div span{width:100%;color:#fff;font-size:24px;padding:0 10px}
 @media screen and (max-width:1750px){.cbp-rfgrid li{width:25%;width:-webkit-calc(25%);width:calc(25%)}}@media screen and (max-width:1500px){.cbp-rfgrid li{width:33.3333333%;width:-webkit-calc(33.333333333333336%);width:calc(33.333333333333336%)}}@media screen and (max-width:1250px){.cbp-rfgrid li{width:25%;width:-webkit-calc(25%);width:calc(25%)}}@media screen and (max-width:1000px){.cbp-rfgrid li{width:33.3333333%;width:-webkit-calc(33.333333333333336%);width:calc(33.333333333333336%)}}@media screen and (max-width:750px){.cbp-rfgrid li{width:33.3333333%;width:-webkit-calc(33.333333333333336%);width:calc(33.333333333333336%)}}@media screen and (max-width:500px){.cbp-rfgrid li{width:50%;width:-webkit-calc(50%);width:calc(50%)}}@media screen and (max-width:250px){.cbp-rfgrid li{width:100%}}
