@@ -2,6 +2,9 @@
     var ctor = function () {
     	var self = this;
         self.displayName = 'Projects';
+        self.imageUrl = function(data) {
+            return "url(" + data +  ")";
+        };
 		self.categories = dataservice.categories;
 		self.projectURL = function(alias) {
 			return '#details/' + alias;// + "/0";

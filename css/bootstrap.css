@@ -816,7 +816,7 @@ a{outline:none;-moz-outline-style:none}a:focus{outline:none;-moz-outline-style:n
 #applicationHost{min-width:1200px !important;width:auto !important;width:100%;height:auto !important;height:100%}
 #content-container{min-height:600px}
 #wrap{padding:0px;position:absolute;top:0px;bottom:100px;left:0px;right:0px;min-width:1200px;width:auto !important;width:100%;overflow-x:hidden;overflow-y:auto}#wrap #content-container{min-width:1200px;width:auto !important;width:100%}
-#footer{position:absolute;bottom:0px;min-width:1200px !important;width:100%;height:100px;padding:20px}#footer .row{min-width:1200px !important;width:100%}
+#footer{position:absolute;bottom:0px;min-width:1200px !important;width:100%;height:100px;padding:20px}#footer .row{min-width:1200px;width:auto !important;width:100%}
 #footer .brand-logo{padding:0}
 #footer .nav-application{float:left !important;min-width:90px}#footer .nav-application li{display:list-item;margin-bottom:0px;line-height:0}#footer .nav-application li a{display:inline;padding:0;font-size:12px;font-style:normal;line-height:17px}#footer .nav-application li a:hover{background:transparent}
 #footer .nav-application li.active a{color:#000}
@@ -854,9 +854,9 @@ a{outline:none;-moz-outline-style:none}a:focus{outline:none;-moz-outline-style:n
 .no-js.no-backgroundsize .cbp-bislideshow li:first-child{opacity:1}
 .no-js.backgroundsize .cbp-bislideshow li:first-child img{display:block}
 .cbp-rfgrid{margin:0;padding:0;list-style:none;position:relative;width:100%}
-.cbp-rfgrid li{position:relative;float:left;overflow:hidden;width:25%;width:-webkit-calc(25%);width:calc(25%)}
+.cbp-rfgrid li{position:relative;float:left;overflow:hidden;width:25%;width:-webkit-calc(25%);width:calc(25%);-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;background-position:center center}
 .cbp-rfgrid li a,.cbp-rfgrid li a img{display:block;width:100%;cursor:pointer}
-.cbp-rfgrid li a img{max-width:100%;vertical-align:baseline}
+.cbp-rfgrid li a img{max-width:100%;vertical-align:baseline;opacity:0;filter:alpha(opacity=0)}
 .cbp-rfgrid li a div{position:absolute;left:0;top:0;right:0;bottom:0;background:rgba(0,0,0,0.8);display:-webkit-flex;display:-moz-flex;display:-ms-flex;display:flex;-webkit-align-items:center;-moz-align-items:center;-ms-align-items:center;align-items:center;text-align:center;opacity:0}
 .cbp-rfgrid li a:hover div{opacity:1}
 .cbp-rfgrid li a div span{width:100%;color:#fff;font-size:24px;padding:0 10px}
