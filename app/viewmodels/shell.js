@@ -13,7 +13,9 @@
     composition.addBindingHandler('fadeImageLoader', {
         init: function(element, valueAccessor) {
             $(".project-list ul li").imagesLoaded(function() {
-                 //console.log(this)
+                $.each(this.elements, function(i, elm){
+                    $(elm).fadeIn(300);
+                });
             });
         }
     });
