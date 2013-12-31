@@ -1,6 +1,6 @@
-﻿<div class="project-list">
+﻿<div class="project-list" data-bind="fadeImageLoader: true">
 	<ul data-bind="template: { foreach: project().assets }">
-		<li><img data-bind="attr: { src: path }" class="img-responsive-height" /></li>
+		<li class="hide" data-bind="click: $parent.next, style: { cursor: 'pointer' }"><img class="" data-bind="attr: { src: path }" class="img-responsive-height" /></li>
 	</ul>
 </div>
 
@@ -8,7 +8,12 @@
 	<div class="col-md-6">
 		<section class="box-padding">
 		    <h2><!-- ko text: project().name --><!-- /ko --></h2>
-		    <p><!-- ko text: project().description --><!-- /ko --></p>
+		    <div class="project-label"><!-- ko text: project().location --><!-- /ko --></div>
+		    <span class="project-description" data-bind="html: project().description"></span>
+		</section>
+		<section class="box-padding" data-bind="with: project().recipe">
+			<div class="recipe-label">PROJECT RECIPE:</div>
+			<a class="recipe-link" data-bind="attr: { href: path }"><!-- ko text: name --><!-- /ko --></a>
 		</section>
 	</div>
 	<div class="col-md-6">

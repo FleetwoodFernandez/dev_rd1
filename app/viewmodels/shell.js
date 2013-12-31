@@ -1,10 +1,43 @@
-﻿define(['plugins/router', 'durandal/app', 'durandal/system', 'knockout', 'dataservice', 'module', 'knockout'], function (router, app, system, ko, dataservice, module, ko) {
+﻿define(['plugins/router', 'durandal/app', 'durandal/system', 'knockout', 'dataservice', 'module', 'knockout', 'durandal/composition','cbpBGSlideshow', 'imageLoader'], function (router, app, system, ko, dataservice, module, ko, composition, slideshow, imageLoader) {
+    composition.addBindingHandler('totalProcessSlides', {
+        init: function (element, valueAccessor) {
+            var val =  valueAccessor();
+            model.totalProcessSlides($(".process-list ul li").length);
+        }
+     });
+    composition.addBindingHandler('slideshowInit', {
+        init: function (element, valueAccessor) {
+            cbpBGSlideshow.init({}, $( '#cbp-bislideshow' ));
+        }
+    });
+    composition.addBindingHandler('fadeImageLoader', {
+        init: function(element, valueAccessor) {
+            $(".project-list ul li").imagesLoaded(function() {
+                $.each(this.elements, function(i, elm){
+                    $(elm).fadeIn(300);
+                });
+            });
+        }
+    });
     var model = {};
     model.router = router;
     model.route = ko.observable();
     model.fragment = ko.observable();
     model.project = ko.observable();
     model.projectSlide = ko.observable(0);
+    model.processSlide = ko.observable(0);
+    model.totalProcessSlides = ko.observable(0);
+    model.isExternal = function($data) {
+        if($data.externalURL)
+            return true;
+        return false;
+    };
+    model.markActive = function($data) {
+        if($data.title === 'PROJECTS' && model.route() === "projects") {
+            return model.pageFilter() === null;
+        }
+        return $data.isActive();
+    };
     model.activeItem = ko.computed(function(){
         var route = router.activeInstruction() ? router.activeInstruction() : null;
         if(route) {
@@ -18,12 +51,30 @@
             }
         }
     });
+    model.pageFilter = ko.computed(function(){
+        var params = router.activeInstruction() ? router.activeInstruction().params : null;
+        if(model.route() === "projects") {
+            if(params[0]) {
+                return params[0].toString().toUpperCase();
+            } else {
+                return null;
+            }
+        } else if (model.route() === "about") {
+            var frags = model.fragment().split("/");
+            if(frags.length > 1) {
+                return frags[1];
+            }
+        }
+        return null;
+    });
     model.projectInfo = function() {
         app.trigger('details:info', true);
     };
     model.mainNavigation = ko.computed(function() {
         return ko.utils.arrayFilter(router.navigationModel(), function(route) {
             return route.settings === undefined;
+        }).sort(function(a, b){
+            return a.sortId - b.sortId;
         });
     });
     model.subNavigation = function(filter) {
@@ -47,14 +98,24 @@
         model.projectSlide(i);
         app.trigger('details:slide', model.projectSlide());
     };
+    model.previousProcess = function() {
+        var i = Math.max(0, model.processSlide() - 1);
+        model.processSlide(i);
+        app.trigger('process:slide', model.processSlide());
+    };
+    model.nextProcess = function() {
+        var i = Math.min(model.processSlide() + 1, model.totalProcessSlides() - 1);
+        model.processSlide(i);
+        app.trigger('process:slide', model.processSlide());
+    };
     model.activate = function () {
         var routes = [[
                 { route: '', moduleId: 'viewmodels/home' },
-                { route: 'projects(/:type)', hash:'#projects', title: 'PROJECTS', moduleId: 'viewmodels/projects', nav: true },
-                { route: 'about', hash:'#about', title: 'ABOUT', moduleId: 'viewmodels/about', nav: true },
-                { route: 'blog', title: 'BLOG', moduleId: 'viewmodels/blog', nav: true },
-                { route: 'contact', title: 'CONTACT', moduleId: 'viewmodels/contact', nav: true },
-                { route: 'details/:id/:slideid', moduleId: 'viewmodels/details' },
+                { route: 'projects(/:type)', hash:'#projects', title: 'PROJECTS', moduleId: 'viewmodels/projects', nav: true, sortId: 1 },
+                { route: 'about', hash:'#about', title: 'ABOUT', moduleId: 'viewmodels/about', nav: true, sortId: 2 },
+                { route: 'blog', title: 'BLOG', externalURL: 'http://ffarqblog.tumblr.com/', nav: true, sortId: 3 },
+                { route: 'contact', title: 'CONTACT', moduleId: 'viewmodels/contact', nav: true, sortId: 4 },
+                { route: 'details/:id', moduleId: 'viewmodels/details' },
                 { route: 'about/fleetwood', title: 'HUNTER FLEETWOOD', moduleId: 'viewmodels/fleetwood', settings: { type: 'about', id: 'fleetwood' }, nav: true },
                 { route: 'about/fernandez', title: 'MARIAPAZ FERNANDEZ', moduleId: 'viewmodels/fernandez', settings: { type: 'about', id: 'fernandez' }, nav: true },
                 { route: 'about/process', title: 'PROCESS', moduleId: 'viewmodels/process', settings: { type: 'about', id: 'process' }, nav: true }
@@ -92,6 +153,15 @@
                 break;
         }
         return 'backsplash ' + css;
+    });
+    app.on('details:previous').then(function(id) {
+        model.previous();
+    });
+    app.on('details:next').then(function(id) {
+        model.next();
+    });
+    app.on('process:next').then(function(id) {
+        model.nextProcess();
     });
     return model;
 });
