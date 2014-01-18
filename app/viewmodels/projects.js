@@ -3,7 +3,7 @@
     	var self = this;
         self.displayName = 'Projects';
         self.imageUrl = function(data) {
-            return "url(/" + data +  ")";
+            return "url(" + data +  ")";
         };
 		self.categories = dataservice.categories;
 		self.projectURL = function(alias) {
