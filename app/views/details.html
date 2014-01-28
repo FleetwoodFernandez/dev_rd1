@@ -10,6 +10,11 @@
 		    <div class="project-label"><!-- ko text: project().location --><!-- /ko --></div>
 		    <span class="project-description" data-bind="html: project().description"></span>
 		</section>
+		<!-- ko foreach: project().external -->
+		<section class="box-padding">
+			<a class="profile-link" data-bind="attr: { href: path }"><!-- ko text: label --><!-- /ko --></a>
+		</section>
+		<!-- /ko -->
 	</div>
 	<div class="col-md-6">
 		<span class="pull-right close-info" data-bind="click: closeInfo"></span>
