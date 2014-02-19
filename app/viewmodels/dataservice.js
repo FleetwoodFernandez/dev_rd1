@@ -51,7 +51,7 @@ define(function(require){
 			],
 			external: [
 				{
-					label: "View Sustainable Features",
+					label: "VIEW SUSTAINABLE FEATURES",
 					path: "assets/TAT_sustainable features.pdf"
 				}
 			]
@@ -345,6 +345,9 @@ define(function(require){
 					path: "img/projects/wells_fargo_capital_finance/Wells_04.jpg"
 				},
 				{
+					path: "img/projects/wells_fargo_capital_finance/Wells_05.jpg"
+				},
+				{
 					path: "img/projects/wells_fargo_capital_finance/Wells_06.jpg"
 				},
 				{
@@ -355,9 +358,6 @@ define(function(require){
 				},
 				{
 					path: "img/projects/wells_fargo_capital_finance/Wells_09.jpg"
-				},
-				{
-					path: "img/projects/wells_fargo_capital_finance/Wells_10.jpg"
 				}
 			]
 		},
@@ -382,7 +382,7 @@ define(function(require){
 					path: "img/projects/sol_loft/SOL_04.jpg"
 				},
 				{
-					path: "img/projects/sol_loft/SOL_06.jpg"
+					path: "img/projects/sol_loft/SOL_05.jpg"
 				}
 			]
 		},

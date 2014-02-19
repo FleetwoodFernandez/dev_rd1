@@ -3,8 +3,8 @@
     	var self = this;
         self.displayName = 'Projects';
         self.imageUrl = function(data) {
-            //return "url(" + data +  ")";
-            return "url(http://fleetwoodfernandez.github.io/dev_rd1/" + data +  ")";
+            return "url(" + data +  ")";
+            //return "url(http://fleetwoodfernandez.github.io/dev_rd1/" + data +  ")";
         };
 		self.categories = dataservice.categories;
 		self.projectURL = function(alias) {
