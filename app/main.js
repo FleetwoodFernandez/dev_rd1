@@ -23,7 +23,7 @@
 
 define(['durandal/system', 'durandal/app', 'durandal/viewLocator', 'bindings'],  function (system, app, viewLocator, bindings) {
     //>>excludeStart("build", true);
-    system.debug(true);
+    //system.debug(true);
     //>>excludeEnd("build");
 
     app.title = 'Fleetwood / Fernandez';
