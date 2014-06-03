@@ -7,7 +7,7 @@
      });
     composition.addBindingHandler('slideshowInit', {
         init: function (element, valueAccessor) {
-            //cbpBGSlideshow.init({}, $( '#cbp-bislideshow' ));
+            cbpBGSlideshow.init({}, $( '#cbp-bislideshow' ));
         }
     });
     composition.addBindingHandler('fadeImageLoader', {
