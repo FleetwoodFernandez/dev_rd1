@@ -8,6 +8,11 @@
     composition.addBindingHandler('slideshowInit', {
         init: function (element, valueAccessor) {
             cbpBGSlideshow.init({}, $( '#cbp-bislideshow' ));
+            setTimeout(function() {
+                $('body').css({
+                    'background-image': 'none'
+                });
+            }, 1000);
         }
     });
     composition.addBindingHandler('fadeImageLoader', {
