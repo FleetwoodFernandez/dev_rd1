@@ -6,8 +6,8 @@ body {
 	-moz-background-size: cover;
 	background-size: cover;
 	background-position: center center;
-    -webkit-transition: all 700ms ease-in-out;
-    -moz-transition: all 700ms ease-in-out;
-    -ms-transition: all 700ms ease-in-out;
-	transition: all 700ms ease-in-out;
+    -webkit-transition: background-image 700ms ease-in-out;
+    -moz-transition: background-image 700ms ease-in-out;
+    -ms-transition: background-image 700ms ease-in-out;
+	transition: background-image 700ms ease-in-out;
 }
